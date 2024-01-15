@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marksheet</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <h1>Marksheet Generotor</h1>
+    <div class="container">
+        <div>
+            <div class="visitor-container">
+                <h3>Student Details</h3>
+                <table>
+                    <tr>
+                        <td><label for="fullname">Full Name</label></td>
+                        <td><input type="text" id="fullname" placeholder="Enter Full Name" value="Kalpesh Vijay Shewale"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mothername">Mother Name</label></td>
+                        <td><input type="text" id="mothername" placeholder="Enter Mother Name" value="Suman"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="seatNo">Seat No</label></td>
+                        <td><input type="number" id="seatNo" placeholder="Enter Seat No" value="0987"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="prnNo">PRN No</label></td>
+                        <td><input type="number" id="prnNo" placeholder="Enter PRN Number" value="189126"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="python">Python Marks</label></td>
+                        <td><input type="number" id="python" placeholder="Enter python Marks" value="77"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="java">Java Marks</label></td>
+                        <td><input type="number" id="java" placeholder="Enter Java Marks" value="67"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dotnet">Dot Net  Marks</label></td>
+                        <td><input type="number" id="dotnet" placeholder="Enter Dot Net Marks" value="70"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="javascript">Javascript  Marks</label></td>
+                        <td><input type="number" id="javascript" placeholder="Enter Javascript Marks" value="90"></td>
+                    </tr>
+                </table>
+                <!-- <p id="note">If Student is absent for exam then fill -1 in marks</p> -->
+            </div>
+            <div class="marksheet" id="marksheet">
+                <div id="logo">
+                    <img src="dylogo.png" width="80%" height="60px">
+                </div>
+                <hr>
+                <table>
+                    <tr>
+                        <td>Seat No:</td>
+                        <td id="seatNoD"></td>
+                        <td>PRN No:</td>
+                        <td id="prnNoD"></td>
+                    </tr>
+                    <tr>
+                        <td>Name :</td>
+                        <td id="fullnameD"></td>
+                        <td>Mother :</td>
+                        <td id="mothernameD"></td>
+                    </tr>
+                </table>
+                <hr>
+                <table>
+                    <tr>
+                        <th>Name Of Subject</th>
+                        <th>Marks</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td id="pythonM"></td>
+                        <td id="pythonG"></td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td id="javaM"></td>
+                        <td id="javaG"></td>
+                    </tr>
+                    <tr>
+                        <td>Dot Net</td>
+                        <td id="dotM"></td>
+                        <td id="dotG"></td>
+                    </tr>
+                    <tr>
+                        <td>Java Script</td>
+                        <td id="jsM"></td>
+                        <td id="jsG"></td>
+                    </tr>
+                    <tr>
+                        <td><b>Total</b></td>
+                        <td><b id="total"></b></td>
+                        <td><b id="tgrade"></b></td>
+                    </tr>
+                </table>
+                <hr>
+                <div id="sgpaDiv">
+                    <strong>SGPA :</strong><span id="sgpa"></span> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+                    <strong>Percentage :</strong><span id="percentage"></span>
+                </div>
+                <div id="directorDiv">
+                    <h5>Dr. Priyanka Singh <br> Director<br> D.Y.P.I.M.E.D.</h5>
+                </div>
+            </div>
+        </div><br>
+        <div id="btnDiv">
+            <input type="button" id="getData" value="Get Data" onclick="getData()">
+            <input type="button" id="printData" value="Print" onclick="printDiv('marksheet')">
+        </div>
+    </div>
+    <script type="text/javascript">
+        hideDive();
+    </script>
+</body>
+</html>
